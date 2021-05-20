@@ -111,7 +111,7 @@ h1 {
     font-size: 2.2vw;
     color: white;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
 }
@@ -140,7 +140,17 @@ h1 {
 }
 
 .icon-bg:hover {
-    filter: invert(80%) sepia(85%) saturate(85%) hue-rotate(10deg) brightness(184%) contrast(50%);
+    /* filter: invert(80%) sepia(85%) saturate(85%) hue-rotate(10deg) brightness(184%) contrast(50%); */
+    filter: invert(84%) sepia(94%) saturate(7481%) hue-rotate(359deg) brightness(100%) contrast(102%);
+}
+
+.icon-small {
+    cursor: pointer;
+    height: 30%;
+    width: 30%;
+    background-size: cover;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(306deg) brightness(114%) contrast(100%);
+    border: solid 10px white;
 }
 
 .icon-mail {
@@ -149,4 +159,27 @@ h1 {
 
 .icon-linkedin {
     background-image: url('./images/logo-linkedin.svg');
+}
+
+.icon-github {
+    background-image: url('./images/logo-github.svg');
+}
+
+.icon-git {
+    background-image: url('./images/git-branch-outline.svg');
+}
+
+.flex-row {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    /* border: solid 1px white; */
+    width: 40%;
+}
+
+.repo {
+    padding: 0;
+    margin: 5%;
 }
