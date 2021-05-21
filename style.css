@@ -66,14 +66,12 @@ li {
     background-image: url('./images/tetris.png');
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
 }
 
 .listmaker-bg {
     background-image: url('./images/listmaker.png');
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
 }
 
 .wrapper {
@@ -84,7 +82,7 @@ li {
 }
 
 .project {
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(12px);
     position: absolute;
     top: 0;
     left: 0;
