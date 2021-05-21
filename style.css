@@ -208,7 +208,7 @@ li {
 
 /* SIMPLE CSS */
 .margin {
-    margin: 3vw;
+    margin: 4vw;
 }
 
 .margin-left {
@@ -259,6 +259,10 @@ li {
 
     h1 {
         font-size: 1.1em;
+    }
+
+    .margin {
+        margin: 8vw;
     }
 
   }
