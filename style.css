@@ -171,11 +171,7 @@ li {
 
 }
 
-.icon {
-    margin: 5%;
-}
-
-.icon-bg {
+.bg-icon {
     cursor: pointer;
     height: 20%;
     width: 20%;
@@ -183,8 +179,11 @@ li {
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(306deg) brightness(114%) contrast(100%);
 }
 
-.icon-bg:hover {
-    /* filter: invert(80%) sepia(85%) saturate(85%) hue-rotate(10deg) brightness(184%) contrast(50%); */
+/* .bg-icon:hover {
+    filter: invert(84%) sepia(94%) saturate(7481%) hue-rotate(359deg) brightness(100%) contrast(102%);
+} */
+
+.hover-icon:hover {
     filter: invert(84%) sepia(94%) saturate(7481%) hue-rotate(359deg) brightness(100%) contrast(102%);
 }
 
@@ -219,6 +218,10 @@ li {
     height: 30%;
     width: 15%;
     margin-bottom: 2vw;
+}
+
+.margin {
+    margin: 3vw;
 }
 
 .education {
