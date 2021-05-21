@@ -63,13 +63,13 @@ li {
 }
 
 .tetris-bg {
-    background-image: url('./images/tetris.png');
+    background-image: url('./images/tetrisblurred.png');
     background-size: cover;
     background-position: center;
 }
 
 .listmaker-bg {
-    background-image: url('./images/listmaker.png');
+    background-image: url('./images/listmakerblurred.png');
     background-size: cover;
     background-position: center;
 }
@@ -82,9 +82,10 @@ li {
 }
 
 /* -webkit- is for safari. */
+/* didn't work on iphone safari so i just replaced image with pre-blurred image */
 .project {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); 
+    /* backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);  */
     position: absolute;
     top: 0;
     left: 0;
