@@ -81,8 +81,10 @@ li {
     align-items: center;
 }
 
+/* -webkit- is for safari. */
 .project {
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); 
     position: absolute;
     top: 0;
     left: 0;
