@@ -9,20 +9,20 @@
     <script src="https://kit.fontawesome.com/3f628d567c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class='wrapper'>
+    <div class='wrapper flex-column'>
         <div class='navbar'>
             <h1>andrew rusli / web developer</h1>
         </div>
         <div class='grid-container'>
             <div class='block tetris-bg'>
-                <div class='project tetris large-font padding-small'>
+                <div class='block-canvas pointer large-font padding-small'>
                     <h2>tetris</h2>
                     <div class='description-font'>a miami themed version of the classic game</div>
                     <div class='description-font'>javascript/html/css</div>
                 </div>
             </div>
             <div class='block listmaker-bg'>
-                <div class='project listmaker large-font padding-small'>
+                <div class='block-canvas pointer listmaker large-font padding-small'>
                     <h2>listmaker</h2>
                     <div class='description-font'>fullstack crud react app</div>
                     <div class='description-font'>integrated with google oauth</div>
@@ -30,18 +30,18 @@
                 </div>
             </div>
             <div class='block'>
-                <div class='project resume'>
-                        <div class='resume-container bottom-border medium-font padding-small'>
+                <div class='block-canvas resume flex-column'>
+                        <div class='resume-container flex-column bottom-border medium-font padding-small'>
                             <!-- <h2>education</h2> -->
-                            <div class='margin-left resume-icon education'></div>
+                            <div class='margin-left resume-icon-container education-icon'></div>
                             <ul class='margin-left'>
                                 <li>BA English & Music, Tufts University</li>
                                 <li>12 Week UX Design Immersive Course, General Assembly NYC</li>
                             </ul>
                         </div>
-                        <div class='resume-container medium-font padding-small'>
+                        <div class='resume-container flex-column medium-font padding-small'>
                             <!-- <h2>stack</h2> -->
-                            <div class='margin-left resume-icon tech'></div>
+                            <div class='margin-left resume-icon-container tech-icon'></div>
                             <ul class='margin-left'>
                                 <li>react, javascript, node/express, mysql, git</li>
                                 <li>sketch, photoshop</li>
@@ -50,21 +50,21 @@
                 </div>
             </div>
             <div class='block'>
-                <div class='project github medium-font flex-column'>
+                <div class='block-canvas github medium-font flex-column'>
                     <div class='flex-row'>
                         <div class='git-square github-repo'>
                             <div class='icon-small icon-git'></div>
-                            <div class='repo'>githubs</div>
+                            <div>github</div>
                         </div>
                         <div class='git-square tetris-repo'>
                                 <div class='icon-small icon-git'></div>
-                                <div class='repo'>tetris</div>
+                                <div>tetris</div>
                         </div>
                     </div>
                     <div class='flex-row'>
                         <div class='git-square listmaker-repo'>
                             <div class='icon-small icon-git'></div>
-                            <div class='repo'>listmaker</div>
+                            <div>listmaker</div>
                         </div>
                         <div class='git-square'>
                         </div>
@@ -74,9 +74,9 @@
                
             
             <div class='block'>
-                <div class='project contact'>
-                    <div class='margin hover-icon bg-icon icon-mail'></div>
-                    <div class='margin hover-icon bg-icon icon-linkedin'></div>
+                <div class='block-canvas contact'>
+                    <div class='margin hover-icon icon-big icon-mail'></div>
+                    <div class='margin hover-icon icon-big icon-linkedin'></div>
                     <!-- <i class="fa-icon far fa-envelope" height='150px'></i> -->
                 </div>
             </div>

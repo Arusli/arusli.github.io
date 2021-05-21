@@ -28,6 +28,22 @@ li {
     margin-bottom: 1.5vw;
 }
 
+.wrapper {
+    width: 100vw;
+    align-items: center;
+}
+
+.flex-column {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    height: 100%;
+    display: flex;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -47,50 +63,20 @@ li {
     margin-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1.5fr auto; */
 }
 
-.flex-column {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row {
-    height: 100%;
-    display: flex;
-}
-
+/* creates self re-sizing squares */
 .block {
     padding-top: 100%;
     background-color: black;
     position: relative;
 }
 
-.tetris-bg {
-    background-image: url('./images/tetris.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.listmaker-bg {
-    background-image: url('./images/listmakercropped.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.wrapper {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* -webkit- is for safari. */
 /* didn't work on iphone safari so i just replaced image with pre-blurred image */
-.project {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); 
+.block-canvas {
+    /* backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);  */
     position: absolute;
     top: 0;
     left: 0;
@@ -98,55 +84,34 @@ li {
     height: 100%;
 }
 
-.tetris {
+.pointer {
     cursor: pointer;
 }
 
 .listmaker {
-    cursor: pointer;
     color: white;
     text-align: right;
-}
-
-.padding-small {
-    padding: 2vw;
-}
-
-.large-font {
-    font-size: 3.5vw
-}
-
-.description-font {
-    font-size: 3vw;
-}
-
-.medium-font {
-    font-size: 2vw;
 }
 
 .resume {
     height: 100%;
     width: 100%;
     color: white;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 .resume-container {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     width: 100%;
     height: 100%;
 }
 
-.bottom-border {
-    border-bottom: solid 1px darkgrey;
-}
-
-.github {
-    color: white;
+.resume-icon-container {
+    background-size: cover;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(306deg) brightness(114%) contrast(100%);
+    height: 30%;
+    width: 15%;
+    margin-bottom: 2vw;
 }
 
 .git-square {
@@ -156,6 +121,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .github-repo {
@@ -177,23 +143,14 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.bg-icon {
+.icon-big {
     cursor: pointer;
     height: 20%;
     width: 20%;
     background-size: cover;
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(306deg) brightness(114%) contrast(100%);
-}
-
-/* .bg-icon:hover {
-    filter: invert(84%) sepia(94%) saturate(7481%) hue-rotate(359deg) brightness(100%) contrast(102%);
-} */
-
-.hover-icon:hover {
-    filter: invert(84%) sepia(94%) saturate(7481%) hue-rotate(359deg) brightness(100%) contrast(102%);
 }
 
 .icon-small {
@@ -202,6 +159,24 @@ li {
     width: 30%;
     background-size: cover;
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(306deg) brightness(114%) contrast(100%);
+}
+
+.hover-icon:hover {
+    filter: invert(84%) sepia(94%) saturate(7481%) hue-rotate(359deg) brightness(100%) contrast(102%);
+}
+
+
+/* IMAGES */
+.tetris-bg {
+    background-image: url('./images/tetrisblurred.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.listmaker-bg {
+    background-image: url('./images/listmakercroppedblurred.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .icon-mail {
@@ -220,14 +195,18 @@ li {
     background-image: url('./images/git-branch-outline.svg');
 }
 
-.resume-icon {
-    background-size: cover;
-    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(306deg) brightness(114%) contrast(100%);
-    height: 30%;
-    width: 15%;
-    margin-bottom: 2vw;
+.education-icon {
+    background-image: url('./images/school.svg');
+    z-index: 98;
 }
 
+.tech-icon {
+    background-image: url('./images/monitor.svg');
+    z-index: 98;
+}
+
+
+/* SIMPLE CSS */
 .margin {
     margin: 3vw;
 }
@@ -236,19 +215,27 @@ li {
     margin-left: 3vw;
 }
 
-.education {
-    background-image: url('./images/school.svg');
-    z-index: 98;
+.bottom-border {
+    border-bottom: solid 1px darkgrey;
+}
+.padding-small {
+    padding: 2vw;
 }
 
-.tech {
-    background-image: url('./images/monitor.svg');
-    z-index: 98;
+.large-font {
+    font-size: 3.5vw
+}
+
+.description-font {
+    font-size: 3vw;
+}
+
+.medium-font {
+    font-size: 2vw;
 }
 
 
-
-/* Responsive */
+/* MEDIA QUERY */
 @media only screen and (max-width: 650px) {
     .grid-container {
         grid-template-columns: 1fr
