@@ -50,6 +50,12 @@ li {
     /* grid-template-rows: 1fr 1.5fr auto; */
 }
 
+.grid-container-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .block {
     padding-top: 100%;
     background-color: black;
@@ -122,18 +128,36 @@ li {
     font-size: 2.5vw;
     width: 100%;
     height: 100%;
-    border-bottom: solid 1px grey;
+}
+
+.bottom-border {
+    border-bottom: solid 1px darkgrey;
 }
 
 .github {
-    background-color: #131315;
-    padding: 4vw;
     font-size: 2.2vw;
     color: white;
+}
+
+.git-square {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
+}
+
+.github-repo {
+    background-color: #131315;
+}
+
+.listmaker-repo {
+    background-color: #1A014B;
+}
+
+.tetris-repo {
+    background-color: #27004B   ;
 }
 
 .contact {
@@ -187,21 +211,6 @@ li {
 
 .icon-git {
     background-image: url('./images/git-branch-outline.svg');
-}
-
-.flex-row {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: flex-start;
-    /* border: solid 1px white; */
-    width: 40%;
-}
-
-.repo {
-    padding: 0;
-    margin: 5%;
 }
 
 .resume-icon {
