@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-position: inside;
 }
 
 body {
@@ -19,6 +18,14 @@ body {
 
 h1 {
     margin: 10px;
+}
+
+h2 {
+    margin-bottom: 2vw;
+}
+
+li {
+    margin-bottom: 1.5vw;
 }
 
 .navbar {
@@ -50,7 +57,6 @@ h1 {
     position: relative;
 }
 
-
 .tetris-bg {
     background-image: url('./images/tetris.png');
     background-size: cover;
@@ -59,7 +65,7 @@ h1 {
 }
 
 .listmaker-bg {
-    background-image: url('./images/list.png');
+    background-image: url('./images/listmaker.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -73,36 +79,50 @@ h1 {
 }
 
 .project {
-    backdrop-filter: blur(8px) saturate(60%) hue-rotate(20deg);
+    backdrop-filter: blur(12px);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 2vw;
 }
 
 .tetris {
     cursor: pointer;
     font-size: 3.5vw;
+    padding: 2vw;
 }
 
 .listmaker {
     cursor: pointer;
-    padding-top: 28vw;
     color: white;
     text-align: right;
     font-size: 3.5vw;
+    padding: 2vw;
+}
+
+.description {
+    font-size: 3vw;
 }
 
 .resume {
-    padding: 4vw;
-    font-size: 2.2vw;
+    height: 100%;
+    width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding: 2vw 4vw;
+    font-size: 2.5vw;
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 1px grey;
 }
 
 .github {
