@@ -16,6 +16,15 @@ body {
     justify-content: center;
 }
 
+a {
+    cursor: default;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
 h1 {
     margin: 10px;
 }
@@ -90,8 +99,9 @@ li {
     height: 100%;
 }
 
-.pointer {
+.hover:hover {
     cursor: pointer;
+    box-shadow: inset 0 0 500px 500px rgba(255, 255, 255, 0.4);
 }
 
 .listmaker {
@@ -121,7 +131,6 @@ li {
 }
 
 .git-square {
-    cursor: pointer;
     height: 100%;
     width: 100%;
     display: flex;
@@ -152,7 +161,6 @@ li {
 }
 
 .icon-big {
-    cursor: pointer;
     height: 20%;
     width: 20%;
     background-size: cover;
@@ -160,7 +168,6 @@ li {
 }
 
 .icon-small {
-    cursor: pointer;
     height: 30%;
     width: 30%;
     background-size: cover;
@@ -168,9 +175,9 @@ li {
 }
 
 .hover-icon:hover {
+    cursor: pointer;
     filter: invert(84%) sepia(94%) saturate(7481%) hue-rotate(359deg) brightness(100%) contrast(102%);
 }
-
 
 /* IMAGES */
 .tetris-bg {
