@@ -192,6 +192,12 @@ li {
     background-position: center;
 }
 
+.portfolio-bg {
+    background-image: url('https://images.ctfassets.net/d1xnaae74je6/5oMbhyeSGg4ZadEkITjwm8/f5a1e99737da713c7e2281301cc69099/IMG_7825.jpg?w=1000&h=667&q=50&fm=webp');
+    background-size: cover;
+    background-position: center;
+}
+
 .icon-mail {
     background-image: url('./images/mail.svg');
 }
