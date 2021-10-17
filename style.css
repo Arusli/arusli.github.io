@@ -33,6 +33,10 @@ h2 {
     margin-bottom: 1vw;
 }
 
+h3 {
+    margin-bottom: 1vw;
+}
+
 li {
     margin-bottom: 1.5vw;
 }
@@ -246,7 +250,7 @@ li {
 }
 
 .large-font {
-    font-size: 3.5vw
+    font-size: 4vw
 }
 
 .description-font {
@@ -258,6 +262,14 @@ li {
 
 .medium-font {
     font-size: 2vw;
+}
+
+.border-top-black {
+    border-top: solid 2px black;
+}
+
+.border-top-white {
+    border-top: solid 2px white;
 }
 
 
