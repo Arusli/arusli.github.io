@@ -146,7 +146,7 @@ li {
     background-color: #131315;
 }
 
-.listmaker-repo {
+.chatroom-repo {
     background-color: #1A014B;
 }
 
@@ -201,6 +201,12 @@ li {
 
 .portfolio-bg {
     background-image: url('https://images.ctfassets.net/d1xnaae74je6/5oMbhyeSGg4ZadEkITjwm8/f5a1e99737da713c7e2281301cc69099/IMG_7825.jpg?w=1000&h=667&q=50&fm=webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.array-bg {
+    background-image: url('./images/array.png');
     background-size: cover;
     background-position: center;
 }
