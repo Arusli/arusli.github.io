@@ -92,6 +92,7 @@ li {
 
 /* -webkit- is for safari. */
 /* didn't work on iphone safari so i just replaced image with pre-blurred image */
+/* created pre-blurred image by turning on backdrop-filter and -webkit-backdrop-filter classes and screenshotting */
 .block-canvas {
     /* backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);  */
@@ -200,13 +201,14 @@ li {
 }
 
 .portfolio-bg {
-    background-image: url('https://images.ctfassets.net/d1xnaae74je6/5oMbhyeSGg4ZadEkITjwm8/f5a1e99737da713c7e2281301cc69099/IMG_7825.jpg?w=1000&h=667&q=50&fm=webp');
+    /* background-image: url('https://images.ctfassets.net/d1xnaae74je6/5oMbhyeSGg4ZadEkITjwm8/f5a1e99737da713c7e2281301cc69099/IMG_7825.jpg?w=1000&h=667&q=50&fm=webp'); */
+    background-image: url('./images/vase_blurred.png');
     background-size: cover;
     background-position: center;
 }
 
 .array-bg {
-    background-image: url('./images/array.png');
+    background-image: url('./images/array_blurred.png');
     background-size: cover;
     background-position: center;
 }
